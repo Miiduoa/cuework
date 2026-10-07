@@ -1,0 +1,28 @@
+{
+  "name": "cuework",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A local subtitle timing workbench with diagnostics and revision history.",
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "check": "tsc --noEmit",
+    "test": "node --test test/*.test.ts",
+    "build": "vite build",
+    "build:pages": "vite build --mode pages",
+    "start": "node server/index.ts",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@types/node": "26.6.4",
+    "fake-indexeddb": "6.2.5",
+    "prettier": "3.9.9",
+    "typescript": "7.0.2",
+    "vite": "8.3.3"
+  },
+  "license": "MIT"
+}
